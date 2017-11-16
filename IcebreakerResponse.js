@@ -2,12 +2,12 @@ function IcebreakerResponse(email){
   this.email = email
 }
 
-IcebreakerResponse.BatchCreate = function(emails){
-  return emails.map(function(userEmails){
-    return new IcebreakerResponse(userEmails[0])
+IcebreakerResponse.BatchCreate = function(email){
+  return emails.map(function(userEmail){
+    return new IcebreakerResponse(userEmail[0])
   })
 }
 
-const emails = ["avi@flatironschool.com"],
+const email = ["avi@flatironschool.com"],
               ["grace@hopper.com"],
               ["alan@xparc.com"]
